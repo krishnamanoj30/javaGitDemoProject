@@ -26,7 +26,7 @@ public class EmployeeController {
 	
 	@GetMapping("/status/check")
 	public String statusCheck() {
-		return "Working fine";
+		return "Working fine.....status code 200";
 	}
 	
 	//create get all employees api
