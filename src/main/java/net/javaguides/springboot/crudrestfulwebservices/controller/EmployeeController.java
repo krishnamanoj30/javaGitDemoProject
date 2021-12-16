@@ -24,6 +24,11 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 	
+	@GetMapping("/status/check")
+	public String statusCheck() {
+		return "Working fine";
+	}
+	
 	//create get all employees api
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees(){
